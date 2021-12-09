@@ -1,7 +1,7 @@
 const http = require('http')
 const url = require('url')
 
-function parsetime (time) {
+const parsetime = (time) => {
   return {
     hour: time.getHours(),
     minute: time.getMinutes(),
@@ -9,7 +9,7 @@ function parsetime (time) {
   }
 }
 
-function unixtime (time) {
+const unixtime = (time) => {
   return { unixtime : time.getTime() }
 }
 
